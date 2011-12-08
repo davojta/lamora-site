@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+      
+    <![endif]-->
+
+
+     <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+     <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+
+    <!-- Le styles -->
+    <link href="styles/bootstrap.css" rel="stylesheet">
+
+
+
+    <style type="text/css">
+
+      body {
+          background-color: #C2C1C1;
+      }
+      .content {
+          /*width: 850px;*/
+          height: 600px;
+      }
+     
+      /*#text {*/
+          /*width: 600px;*/
+          /*text-align: center;*/
+          /*display: inline;*/
+      /*}*/
+      #text a {
+          display: inline;
+      }
+      a img {
+          display: inline;
+      }
+
+      img.center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      div.menu-item {
+          text-align: center;
+      }
+
+      #dev7link {
+          position: absolute;
+          top: 0;
+          left: 50px;
+          background: url(images/dev7logo.png) no-repeat;
+          width: 60px;
+          height: 67px;
+          border: 0;
+          display: block;
+          text-indent: -9999px;
+      }
+
+      .theme-default #slider {
+          margin: 100px auto 0 auto;
+          width: 618px; /* Make sure your images are the same size */
+          height: 246px; /* Make sure your images are the same size */
+      }
+    </style>
+
+      <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <!--<div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Project name</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <form action="" class="pull-right">
+            <input class="input-small" type="text" placeholder="Username">
+            <input class="input-small" type="password" placeholder="Password">
+            <button class="btn" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="container">
+
+        <div class="content">
+            <!--<div class="page-header">-->
+            <!--<h1>Page name <small>Supporting text or tagline</small></h1>-->
+            <!--</div>-->
+            <div id="menu">
+                <div class="row show-grid1">
+                    <div class="span16">
+                        <div id="logo">
+                             <a href="#"><img class="center" src="images/2011-12-06_1037.png"></a>
+
+                            <div id="gallery-wrapper">
+
+                                <div class="slider-wrapper theme-default">
+                                    <div class="ribbon"></div>
+                                    <div id="slider" class="nivoSlider">
+                                        <img src="images/toystory.jpg" alt=""/>
+                                        <a href="http://dev7studios.com"><img src="images/up.jpg" alt=""
+                                                                              title="This is an example of a caption"/></a>
+                                        <img src="images/walle.jpg" alt="" data-transition="slideInLeft"/>
+                                        <img src="images/nemo.jpg" alt="" title="#htmlcaption"/>
+                                    </div>
+                                    <div id="htmlcaption" class="nivo-html-caption">
+                                        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a
+                                        link</a>.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row show-grid">
+                    <div class="span4">
+                        <div class="menu-item">
+                           <a href="#"><img class="center" src="images/what.png"></a>
+                            <h3>Кто мы?</h3>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="menu-item">
+                            <a href="#"><img class="center" src="images/announce.png"></a>
+                            <h3>Афиша</h3>
+                        </div>
+
+                    </div>
+                    <div class="span4">
+                        <div class="menu-item">
+                            <a href="#"><img class="center" src="images/foto.png"></a>
+                            <h3>Фото</h3>
+                        </div>
+
+                    </div>
+                    <div class="span4">
+                        <div class="menu-item">
+                            <a href="#"><img class="center" src="images/map.png"></a>
+                            <h3>Карта</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row show-grid">
+                    <div class="span4">
+                        <div class="menu-item">
+                            <a href="#"><img class="center" src="images/friends.png"></a>
+                            <h3>Друзья</h3>
+
+
+                        </div>
+
+                    </div>
+                    <div class="span4">
+                        <div class="menu-item">
+                            <a href="#"><img class="center" src="images/vkontakte.png"></a>
+                            <h3>Вконтакте</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="span4">
+                        <div class="menu-item">
+                            <a href="#"><img class="center" src="images/facebook.png"></a>
+                            <h3>Facebook</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="span4">
+                        <div class="menu-item">
+                             <a href="#"><img class="center" src="images/subscription.png"></a>
+                            <h3>Email рассылка</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <footer>
+                <p>&copy; Company 2011</p>
+            </footer>
+
+        </div>
+        <!-- /container -->
+        <script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+        </script>
+  </body>
+</html>
