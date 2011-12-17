@@ -70,6 +70,9 @@
           width: 618px; /* Make sure your images are the same size */
           height: 246px; /* Make sure your images are the same size */
       }
+       div#gallery-wrapper, div#text {
+          display: none;
+       }
     </style>
 
       <!-- Le fav and touch icons -->
@@ -106,28 +109,12 @@
             <!--<h1>Page name <small>Supporting text or tagline</small></h1>-->
             <!--</div>-->
             <div id="menu">
-                <div class="row show-grid1">
+                <div class="row show-grid">
                     <div class="span16">
                         <div id="logo">
                              <a href="#"><img class="center" src="images/2011-12-06_1037.png"></a>
 
-                            <div id="gallery-wrapper">
 
-                                <div class="slider-wrapper theme-default">
-                                    <div class="ribbon"></div>
-                                    <div id="slider" class="nivoSlider">
-                                        <img src="images/toystory.jpg" alt=""/>
-                                        <a href="http://dev7studios.com"><img src="images/up.jpg" alt=""
-                                                                              title="This is an example of a caption"/></a>
-                                        <img src="images/walle.jpg" alt="" data-transition="slideInLeft"/>
-                                        <img src="images/nemo.jpg" alt="" title="#htmlcaption"/>
-                                    </div>
-                                    <div id="htmlcaption" class="nivo-html-caption">
-                                        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a
-                                        link</a>.
-                                    </div>
-                                </div>
-                            </div>
 
 
                         </div>
@@ -135,7 +122,7 @@
                 </div>
                 <div class="row show-grid">
                     <div class="span4">
-                        <div class="menu-item">
+                        <div id="what" class="menu-item">
                            <a href="#"><img class="center" src="images/what.png"></a>
                             <h3>Кто мы?</h3>
                         </div>
@@ -147,7 +134,7 @@
                         </div>
 
                     </div>
-                    <div class="span4">
+                    <div id="foto" class="span4">
                         <div class="menu-item">
                             <a href="#"><img class="center" src="images/foto.png"></a>
                             <h3>Фото</h3>
@@ -208,12 +195,66 @@
 
         </div>
         <!-- /container -->
-        <script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
-        <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.pack.js"></script>
-        <script type="text/javascript">
-            $(window).load(function() {
-                $('#slider').nivoSlider();
-            });
-        </script>
-  </body>
-</html>
+
+        <div id="gallery-wrapper">
+
+            <div class="slider-wrapper theme-default">
+                <div class="ribbon"></div>
+                <div id="slider" class="nivoSlider">
+                    <img src="images/toystory.jpg" alt=""/>
+                    <a href="http://dev7studios.com"><img src="images/up.jpg" alt=""
+                                                          title="This is an example of a caption"/></a>
+                    <img src="images/walle.jpg" alt="" data-transition="slideInLeft"/>
+                    <img src="images/nemo.jpg" alt="" title="#htmlcaption"/>
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a
+                    link</a>.
+                </div>
+            </div>
+        </div>
+        
+        <div id="text">
+
+             Дом культуры “La мора”
+        Свободное арт-пространство для реализации некоммерческих проектов.
+        Дом культуры “La мора” – место, свободное от алкоголя, наркотиков, политики и религии. Это место для позитивного общению людей, самореализации и творчества.
+        “La мора” организует и бесплатно предоставляет свою территорию для проведения следующего рода мероприятий:
+        1. Выставки (фотография, живопись, графика, скульптура, керамика, инсталляция и др.)
+        2. Кинопоказы (классика кино, артхаус, белорусское современное кино, анимация)
+        3. Мастер-классы (контактная импровизация, жонглирование, чайная церемония, войлоковаляние, ларп)
+        4. Тематические дискуссии,клубы  и семинары (путешествия, культура, искусство)
+        5. Музыкальные акустические концерты
+        6. Театральные постановки
+        Всегда готовы к сотрудничеству.
+
+        что сюда еще стоит добавить, может телефоны, контакты???
+        текста не должно  быть много, но это старый текст, может что-то совершенно другое написать
+
+
+        </div>
+
+                <script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
+                <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.pack.js"></script>
+                <script type="text/javascript">
+                    $(window).load(function() {
+
+                        $('#foto').click(function () {
+                            $('div.span16 > div').hide();
+                            var wrapper = $('div#gallery-wrapper');
+                            $('div.span16').append(wrapper);
+                            wrapper.show();
+
+                            $('#slider').nivoSlider();
+                        });
+                        $('#what').click(function () {
+                            $('div.span16 > div').hide();
+                            $('div.span16').append($('div#text'));
+                            $('div#text').show();
+                            
+                        });
+
+                    });
+                </script>
+          </body>
+        </html>
